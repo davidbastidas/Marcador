@@ -11,12 +11,13 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="316dp"
+        android:layout_height="272dp"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <EditText
@@ -25,15 +26,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Nombre de la foto"
+            android:hint="NIC O MEDIDOR"
             android:inputType="number" />
 
         <Button
             android:id="@+id/tomarFoto"
-            android:layout_width="50dp"
+            android:layout_width="107dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tomar Foto" />
+            android:drawableLeft="@mipmap/camara"
+            android:drawablePadding="4dp"
+            android:text="Tomar Foto"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -41,7 +45,8 @@
         android:id="@+id/guardarFoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Guardar" />
+        android:layout_marginTop="40dp"
+        android:layout_weight="0"
+        android:text="Limpiar para Otra foto" />
 
 </LinearLayout>
